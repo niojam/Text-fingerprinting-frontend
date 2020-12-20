@@ -21,7 +21,6 @@ const FileUploadComponent = () => {
     const onFileChange = (evt: any) => {
         if (evt.target.files?.length) {
             const fileObj = evt.target.files[0];
-            console.log(fileObj);
             if (isTxtFile(fileObj.name)) {
                 setFile(fileObj);
             }
